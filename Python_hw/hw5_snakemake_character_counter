@@ -1,0 +1,8 @@
+rule character_count:
+    input:
+        "input/input"
+
+    output:
+        "output/output"
+    shell:
+        "cat{input} | wc -m > {output}"
